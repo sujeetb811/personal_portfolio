@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Contact</title>
+  <link rel="stylesheet" href="five.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar sidebarGo">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/intro.html">My Intro</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html" class="active">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="contactform">
+        <h1>Contact Me for Work or General Inquiries</h1>
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label for="clientName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="clientName" name="clientName" required>
+          </div>
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="clientEmail" name="clientEmail" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email or phone number with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientPhone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="clientPhone" name="clientPhone">
+          </div>
+          <div class="mb-3">
+            <label for="clientInquiry" class="form-label">Inquiry</label>
+            <textarea class="form-control" id="clientInquiry" name="clientInquiry" rows="4" required></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="isClient" name="isClient">
+            <label class="form-check-label" for="isClient">I want you to work on a project with me</label>
+          </div>
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="fourth.js"></script>
+</body>
+</html>
